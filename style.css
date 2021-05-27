@@ -1,0 +1,779 @@
+@font-face {
+    font-family: belfort;
+    src: url(Bellfort.ttf);
+}
+
+@font-face {
+    font-family: belfort-bold;
+    src: url(Bellfort\ Bold.ttf);
+}
+
+@font-face {
+    font-family: meloriac;
+    src: url(/meloriac-webfont.woff);
+    src: url(/meloriac-webfont.woff2);
+}
+
+
+body
+{
+    background-color: #e0e5eb;
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.invi
+{
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+
+.point
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: clignote;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    transition: none;
+    border-radius: 50px;
+
+box-shadow:  1px 1px 2px #bec3c8,
+             -1px -1px 2px #ffffff;
+    
+}
+
+@keyframes clignote {
+    0%   { opacity:1; }
+    50%   {opacity:0; }
+    100% { opacity:1; }
+  }
+
+.name
+{
+    color: #212121;
+    font-family: belfort;
+    font-size: 50px;
+    /* letter-spacing: 20px; */
+}
+
+.menu-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: #212121;
+    border-radius: 50px;
+    background: #e0e5eb;
+    box-shadow:  3px 3px 5px #bec3c8,
+             -3px -3px 5px #ffffff;
+    cursor: pointer;
+}
+
+.travaux
+{
+    font-family: belfort;
+}
+
+.center
+{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+.bg
+{
+    background-image: url("/300ppi/fond-bobine.png");
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html
+{
+    position: absolute;
+    color: #e0e5eb;
+    font-family: belfort;
+    font-size: 230px;
+    /* letter-spacing: 40px; */
+    margin: 0px;
+    text-align: center;
+    animation: clignoter 15s infinite;
+    padding-bottom: 4vh;
+    text-align: center;
+    transition: none;
+    text-shadow: 
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    outline: none;
+}
+
+@keyframes clignoter {
+    0%   { opacity:1; }
+    15% { opacity:0; }
+    33% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+.css
+{
+    position: absolute;
+    color: #e0e5eb;
+    font-family: belfort;
+    font-size: 230px;
+    /* letter-spacing: 30px; */
+    margin: 0px;
+    text-align: center;
+    animation: clignotercss 15s infinite;
+    padding-bottom: 4vh;
+    text-align: center;
+    transition: none;
+    text-shadow: 
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    outline: none;
+}
+
+@keyframes clignotercss {
+    0%   { opacity:0; }
+    33% { opacity:1; }
+    48% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:0; }
+  }
+
+.js
+{
+    position: absolute;
+    color: #e0e5eb;
+    font-family: belfort;
+    font-size: 230px;
+    /* letter-spacing: 20px; */
+    margin: 0px;
+    text-align: center;
+    animation: clignoterjs 15s infinite;
+    padding-bottom: 4vh;
+    text-align: center;
+    transition: none;
+    text-shadow: 
+    -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    outline: none;
+}
+
+@keyframes clignoterjs {
+    0%   { opacity:0; }
+    33% { opacity:0; }
+    66% { opacity:1; }
+    82% { opacity:0; }
+    100% { opacity:0; }
+  }
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;overflow: hidden;
+}
+
+.logiciels
+{
+    
+    white-space: nowrap;
+    font-family: belfort-bold;
+    font-size: 80px;
+    animation: scrollTxt1 40s linear infinite;
+    
+}
+
+@keyframes scrollTxt1
+{
+    0%{
+        transform: translate(0)
+    }
+
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+
+
+
+
+/* ----------- MENU ----------- */
+
+.menu1
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #212121;
+    width: 100%;
+    height: 100%;
+    /* background: #e0e0e0; */
+
+    transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    transform: translateX(100%); 
+    -webkit-transform: translateX(100%);
+
+
+}
+
+.containmenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1.isOpen
+{
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    /* color: white; */
+}
+
+.croixmenu
+{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: #666666;
+    border-radius: 33px;
+background: #212121;
+box-shadow:  3px 3px 6px #1c1c1c,
+             -3px -3px 6px #262626;
+}
+
+
+.croixmenu p
+{
+    font-family: belfort;
+}
+
+.menu1 .menu1ul
+{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding: 0px;
+    width: 81%;
+    
+
+}
+
+.menu1 .menu1ul .menu1li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+
+}
+
+.menu .menu1ul .menu1li .menu1a
+{
+    color: #666666;
+    font-family: belfort-bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu1 .menu1a
+{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    /*font-size: 80px;*/
+    /*letter-spacing: .070em;*/
+    text-align: end;
+    border-radius: 50px;
+    border-radius: 33px;
+background: #212121;
+box-shadow:  6px 6px 12px #1c1c1c,
+             -6px -6px 12px #262626;
+}
+
+.about
+{
+    font-size: 1em !important;
+}
+
+
+
+/* TRAIT MENU */
+
+.containtrait
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 10%;
+}
+
+.traitmenu
+{
+    position: absolute;
+    width: 90%;
+    height: 2.5px;
+    background-color: #212121;
+    text-align: center;
+    box-shadow:  2px 2px 3px #1C1C1C,
+             -2px -2px 3px #262626;
+}
+
+
+
+/* ICONES RESEAUX SOCIAUX */
+
+
+.iconsoc2
+{
+    text-align: center;
+    width: 50%;
+}
+
+li
+{
+    display: inline-block;
+}
+
+.icon
+{
+    color: #666666;
+    margin: 0 20px 8px;
+    border-radius: 33px;
+/* background: #212121;
+box-shadow:  2px 2px 4px #1c1c1c,
+             -2px -2px 4px #262626; */
+}
+
+.iconsoc2
+{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding: 0px;
+    
+}
+
+.iconsoc3
+{
+    list-style: none;
+}
+
+.iconsoc2 .iconsoc3
+{
+    display: inline-block;
+}
+
+
+
+
+
+/* ----------- ME CONTACTER ----------- */
+
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-family: belfort;
+}
+
+.contactcard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 40%;
+    border-radius: 33px;
+background: #E0E5EB;
+box-shadow:  5px 5px 10px #bec3c8,
+             -5px -5px 10px #ffffff;
+    text-align: center;
+}
+
+.contactcard:hover
+{
+    transform : scale(1.1, 1.1);
+}
+
+.contactname
+{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    border-bottom: 2px solid #212121;
+}
+
+/* .contacts
+{
+    font-size: 30px;
+    margin-top: 0px;
+} */
+
+/* ----------- RESPONSIVE ----------- */
+
+@media (max-width: 1300px){
+    .html, .css, .js
+    {
+        font-size: 195px;
+        text-shadow: 
+    -7px -7px 10px rgba(255, 255, 255, 0.4),
+    7px 7px 10px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    }
+}
+
+@media (max-width: 1110px){
+    .html, .css, .js
+    {
+        font-size: 160px;
+    }
+}
+
+@media (max-width: 930px){
+    .html, .css, .js
+    {
+        font-size: 145px;
+    }
+
+    .footer
+    {
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 860px){
+    .html, .css, .js
+    {
+        font-size: 128px;
+    }
+
+    /* .croixmenu
+    {
+        box-shadow:  3px 3px 6px #1c1c1c,
+             -3px -3px 6px #262626;
+    } */
+
+    .mestravaux, .retour
+    {
+        display: none;
+    }
+
+    .menu-btn
+    {
+        width: 5%;
+    }
+
+    .invi
+    {
+        width: 5%;
+    }
+}
+
+@media (min-width: 730px) {
+    .javascript{
+        display: none;
+    }
+}
+
+@media (max-width: 730px){
+    .html, .css, .javascript
+    {
+        font-size: 200px;
+        text-shadow: 
+    -6px -6px 9px rgba(255, 255, 255, 0.4),
+    6px 6px 9px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    }
+
+    .js1
+    {
+        display: none;
+    }
+
+    .logiciels
+    {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 580px){
+    .html, .css, .js
+    {
+        /* font-size: 70px; */
+        text-shadow: 
+        -3px -3px 6px rgba(255, 255, 255, 0.4),
+    3px 3px 6px rgba(0, 0, 0, 0.08);
+    caret-color: #262626;
+    }
+}
+
+@media (max-width: 470px){
+    .html, .css, .js
+    {
+        font-size: 150px;
+    }
+
+    .logiciels
+    {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 432px) {
+    .logiciels
+    {
+        bottom: 0px;
+    }
+
+    .invi, .accueil
+    {
+        margin: 0 15px;
+        width: 10%;
+    }
+}
+
+@media (max-width: 400px){
+    .html, .css, .js
+    {
+        font-size: 130px;
+        /* text-shadow: 
+        -1px -1px 2px rgba(255, 255, 255, 0.4),
+    1px 1px 2px rgba(0, 0, 0, 0.08);
+    caret-color: #262626; */
+    }
+}
+
+@media (max-width: 360px){
+    /* .html, .css, .js
+    {
+        /* font-size: 30px;
+    } */
+
+    .menu .menu1ul .menu1li .menu1a
+    {
+        font-size: 30px;
+    }
+
+    .menu1 .menu1a
+    {
+        box-shadow:  4px 4px 8px #1c1c1c,
+             -4px -4px 8px #262626;
+    }
+
+    .logiciels
+    {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+/* ----------- RESPONSIVE CONTACT ----------- */
+
+@media (max-width: 1060px) {
+    .contactcard
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 780px) {
+    .contactcard
+    {
+        width: 60%;
+    }
+}
+
+@media (max-width: 630px) {
+    .contactcard
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactcard
+    {
+        width: 80%;
+    }
+}
+
+@media (max-width: 420px) {
+    .contactcard
+    {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* ----------- VERTICAL RESPONSIVE ----------- */
+
+@media (max-height: 750px) {
+    .containtrait
+    {
+        bottom:12%;
+    }
+
+}
+
+@media (max-height: 700px) {
+    .logiciels
+    {
+        font-size: 50px;
+    }
+}
+
+@media (min-height: 630px) {
+    .infos4, .infos5, .infos6
+    {
+        display: none;
+    }
+}
+
+@media (max-height: 630px) {
+    .infos1, .infos2, .infos3
+    {
+        display: none;
+    }
+}
+
+@media (max-height: 600px) {
+    .containtrait
+    {
+        bottom:14%;
+    }
+
+}
+
+@media (max-height: 550px) {
+    .contactname
+    {
+        font-size: 30px;
+    }
+
+    .contactcard h2
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 500px) {
+    .containtrait
+    {
+        bottom: 16%;
+    }
+
+    .menu .menu1ul .menu1li .menu1a
+    {
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 450px) {
+    .menu .menu1ul .menu1li .menu1a
+    {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .contactname
+    {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .contactcard h2
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 400px) {
+    .menu .menu1ul .menu1li .menu1a
+    {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    .travaux
+    {
+        margin: 10px;
+    }
+
+    .iconsoc2
+    {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-height: 450px) {
+    .logiciels
+    {
+        margin: 0px;
+    }
+}
+
+@media (max-height: 350px) {
+    .menu .menu1ul .menu1li .menu1a
+    {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .travaux
+    {
+        margin: 5px;
+    }
+
+}
